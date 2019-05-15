@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 app.listen(port,function(request,response){ 
 
 	app.get('/',function(request,response){
-		response.sendFile(path.join(__dirname ,'/public','setup.html'));
+		response.render(path.join(__dirname ,'/public','setup.html'));
 		console.log('/');
 	});
 	
